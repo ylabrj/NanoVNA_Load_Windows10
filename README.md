@@ -11,8 +11,7 @@ A lot of the info applies to any operating system. For the software [download st
 
 NanoVNA has already branched into 2 hardware versions - the original __NanoVNA__ and __NanoVNA-H__.
 
-It's not always clear which one you are getting, since some identify it on the label, some don't, and on some it's incorrect. My NanoVNA-H unit only says NanoVNA on the label.
-
+It's not always clear which one you are getting, since some identify it on the label, some don't, and on some it's incorrect. 
 To identify the version:
 
 1. Turn on the unit
@@ -22,7 +21,7 @@ To identify the version:
 
 __* Handy hint: use a stylus for tapping the screen and selecting the menus. Fat fingers don't work as well and leave fingerprints. *__
 
-My unit says NanoVNA on the external case, but the screen identifies it as NanoVNA-H.
+My unit says NanoVNA on the external case, but the VERSION screen identifies it as NanoVNA-H.
 
 That first line with the github URL (in my case, **https://github.com/hugen79/NanoVNA-H** is important. I suggest you note it down... just in case someone comes up with yet another version.
 
@@ -80,7 +79,7 @@ User [Oristo in the NanoVna forum here had the solution](https://groups.io/g/nan
 
 __NanoVNA__ releases only one version - the VNA (Vector Network Analyser).
 
-__NanoVNA-H__ has two versions of the software - the Vector Network Analyser (VNA) and the Antenna Analyser (AA). The devices ship iwth the VNA software. You need to pick which one you want. What's the difference between the two? Info on the AA version seems to be pretty sparse as of this writing (late Dec 2019). Let me know if you find something.
+__NanoVNA-H__ has two versions of the software - the Vector Network Analyser (VNA) and the Antenna Analyser (AA). The devices ship with the VNA software. You need to pick which one you want. What's the difference between the two? Info on the AA version seems to be pretty sparse as of this writing (late Dec 2019). Let me know if you find something.
 
 If you're following along properly, you have identified which NanoVNA version you have, and you know where to get the releases. If you don't, go back to the top of this page, get yourself a caffeinated beverage, drink it, and read it again.
 
