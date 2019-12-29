@@ -22,11 +22,11 @@ To identify the version:
 
 __* Handy hint: use a stylus for tapping the screen and selecting the menus. Fat fingers don't work as well and leave fingerprints. *__
 
-You can see on this picture that mine ways NanoVNA on the external case, but the screen identifies it as NanoVNA-H.
+My unit says NanoVNA on the external case, but the screen identifies it as NanoVNA-H.
 
 That first line with the github URL (in my case, **https://github.com/hugen79/NanoVNA-H** is important. I suggest you note it down... just in case someone comes up with yet another version.
 
-Anothe important item is the version - in my case **v0.2.3.2-g8ac9166**. That will tell you if you need to upgrade
+Anothe important item is the version - in my case **v0.2.3.2-g8ac9166**. That will tell you if you need to upgrade.
 
 It's important because you need to know...
 
@@ -40,17 +40,17 @@ ttrftech/edy55's github for NanoVNA is [here](https://github.com/ttrftech/NanoVN
 
 hugen79's github for NanoVNA is [here](https://github.com/hugen79/NanoVNA-H), with thedownloadable [software releases here](https://github.com/hugen79/NanoVNA-H/releases)
 
-For any subsequent versions, try that URL from the config page. And add **/releases** to the end of the URL on the VERSION page to get to the releases directory
+For any subsequent versions, try that URL from the __CONFIG__ -> __VERSION__ page. And add **/releases** to the end of the URL on the VERSION page to get to the releases directory.
 
 ## Step 2: Download and install the DFUSE firmware converter and uploader
 
-All NanoVNA's so far are based on ST Micro's STM32 family of chips. Loading the software requires ST Micro's DFuse firmware loader.
+All NanoVNA's so far are based on ST Micro's STM32 family of chips. Loading the firmware from your Windows PC requires ST Micro's DFuse firmware loader.
 
 The main download page is [here](https://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll) with lots of instructions.
 
 Follow the instructions there for downloading and installing.
 
-All the program and utilities will appear in your Start menu under __ST Microelectronics__.
+All the program and utilities will appear in your Start menu under __STMicroelectronics__.
 
 ### Step 2A: Load the driver for your Windows and hardware version
 
@@ -76,17 +76,17 @@ User [Oristo in the NanoVna forum here had the solution](https://groups.io/g/nan
 > * right-click and select "Update Driver Software..."  [more here] (https://www.lifewire.com/how-to-update-drivers-in-windows-2619214)
 > * browse that back to the DfuSeDemo.exe installation folder
 
-## Step 3: Which version do you want? VNA or AA? And do I need to upgrade?
+## Step 3: Which version do you want? VNA or AA? And do you need to upgrade?
 
 __NanoVNA__ releases only one version - the VNA (Vector Network Analyser).
 
-__NanoVNA-H__ has two versions of the software - the Vector Network Analyser (VNA) and the Antenna Analyser (AA). You need to pick which one you want. What's the difference between the two? Info on the AA version seems to be pretty sparse as of this writing (late Dec 2019). Let me know if you find something.
+__NanoVNA-H__ has two versions of the software - the Vector Network Analyser (VNA) and the Antenna Analyser (AA). The devices ship iwth the VNA software. You need to pick which one you want. What's the difference between the two? Info on the AA version seems to be pretty sparse as of this writing (late Dec 2019). Let me know if you find something.
 
 If you're following along properly, you have identified which NanoVNA version you have, and you know where to get the releases. If you don't, go back to the top of this page, get yourself a caffeinated beverage, drink it, and read it again.
 
-Scrolling down on the releases page for your device, you should eventually see the release number you have on your NanoVNA. That helps confirm that you are not on the right page. If you don't see it:
+Scrolling down on the __/releases__ page for your device, you should eventually see the release number you have on your NanoVNA. That helps confirm that you are on the right page. If you don't see it:
 
-1. Double check that you are on the right page for your device (NanoVNA or NanoVNA-H)
+1. Double check in the URL: that you are on the right page for your device (NanoVNA or NanoVNA-H)
 2. Check if your release number fits somewhere between a couple of release numbers on the page.
 
 The releases on the page are the sort-of-official releases that are judged to be significant and reliable enough for release by the developers. Keeners can go right to the source and pick up interim releases to get new features early. If you purchased your NanoVNA new, it likely has one of the official releases. If you picked it up used, it may have been owned by someone smarter than me who knows how to compile and generate interim releases.
@@ -107,7 +107,7 @@ Follow the instructions below for your board.
 
 
 ### NanoVNA: .zip file, with no .dfu
-** Note**: I haven't tested this one myself, since I have a -H board. Drop me a message if there are errors.
+** Note**: I haven't tested this one myself, since I have a -H board. Drop me a message if there are errors. Sorry about blowing up your board.
 
 I got some of these instructions from [here](https://docs.ghielectronics.com/hardware/loaders/stm32-bootloader.html)
 
@@ -138,13 +138,13 @@ To convert the  .bin file
 
 ### NanoVNA-H: Pick and download the appropriate .dfu file
 
-Just pick and download. Thank you hugen79,
+Just pick and download. Thank you hugen79 for making it easy.
 
 ## Step 5: Connect and put your NanoVNA into download mode
 
 ### 5A: Connect to USB
 
-You'll need to connect your NanoVNA to your PC with a USB cable. Most NanoVNA ship with a cable. If you didn't get a cable with it, be sure the USB cable you are using is good for data and not just power. *Hint: if it connects to your phone and allows you to move files back and forth, then it's a data cable.*
+You'll need to connect your NanoVNA to your PC with a USB cable. Most NanoVNA ship with a good cable. If you didn't get a cable with it, be sure the USB cable you are using is good for data and not just power. *Hint: if it connects to your phone and allows you to move files back and forth, then it's a data cable.*
 
 ### 5B: Check if you can put it in download mode using the interface
 
@@ -166,6 +166,8 @@ If you got the the DFU menu, jump to step 6
  
  
  ## Step 6: Load the firmware using DFUSEdemo
+ 
+ That's the software you loaded in Step 2.
  
  STMicroelectronics has a [great manual here on using the DFuse utilities](https://www.st.com/content/ccc/resource/technical/document/user_manual/3f/61/72/ff/c5/5a/4a/7b/CD00155676.pdf/files/CD00155676.pdf/jcr:content/translations/en.CD00155676.pdf).
  
