@@ -184,6 +184,20 @@ If you got the the DFU menu, jump to step 6
  
  And you're done!
  
+ Some helpful links for using nanoVNA:
+ 
+ * HexandFlex guides to getting starting with the NanoVNA:
+  * Part 1: [What is a VNA?](https://hexandflex.com/2019/08/31/getting-started-with-the-nanovna-part-1/#more-376). Includes basic setup and calibration.
+  * Part 2: [Configuring Traces, Channels and Formats](https://hexandflex.com/2019/09/08/getting-started-with-the-nanovna-part-2/)
+  * Part 3: [Using the NanoVNA using the VNASaver PC software](https://hexandflex.com/2019/09/15/getting-started-with-the-nanovna-part-3-pc-software/)
+  
+* A nice [NanoVNA case design on ThingyVerse]https://www.thingiverse.com/thing:3818979)
+* One of many [RTL-SDR blog entries on NanoVNA](https://www.rtl-sdr.com/tag/nanovna/). A great site for all manner of cheap and excellent radio gear.
+ 
+ 
+ 
+ 
+ 
 
  
 
