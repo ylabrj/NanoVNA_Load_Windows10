@@ -183,7 +183,18 @@ If you got the the DFU menu, jump to step 6
  
  And you're done!
  
- Some helpful links for using nanoVNA:
+# Information sources on using the nanoVNA
+ 
+ ## The most comprensive user guide I have found 
+ 
+Gunther Kraus wrote an excellent user guide and [you can find it here in a nice PDF format](http://gunthard-kraus.de/fertig_NanoVNA/English_NanoVNA_V1.5._final.pdf) that you can print, read at your leasure and scribble notes on. 
+
+He provides an overview, detailed information on calibration, and shows the differences and advantages of using the PC interface instead of the built-in interface.
+
+Gunther has updated the document in the past, so you may want to check his [release directory](http://gunthard-kraus.de/fertig_NanoVNA) for updated versions.
+ 
+
+ ## Other links: 
  
  * HexandFlex guides to getting starting with the NanoVNA:
   * Part 1: [What is a VNA?](https://hexandflex.com/2019/08/31/getting-started-with-the-nanovna-part-1/#more-376). Includes basic setup and calibration.
