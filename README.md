@@ -9,9 +9,12 @@ A lot of the info applies to any operating system. For the software [download st
 
 ## Step 1: Which NanoVNA hardware do you have?
 
-NanoVNA has already branched into 2 hardware versions - the original __NanoVNA__ and __NanoVNA-H__.
+As of January 2020, NanoVNA has already branched into 4 hardware versions - the original __NanoVNA__, Hugen79's __NanoVNA-H__ and larger 4" display -H4; we spotted a -F variant, and being open source, there will probably be more coming.
 
 It's not always clear which one you are getting, since some identify it on the label, some don't, and on some it's incorrect. 
+
+When you turn on the unit, the version flashes up but disappears too quickly to read it.
+
 To identify the version:
 
 1. Turn on the unit
@@ -23,7 +26,7 @@ __* Handy hint: use a stylus for tapping the screen and selecting the menus. Fat
 
 My unit says NanoVNA on the external case, but the VERSION screen identifies it as NanoVNA-H.
 
-That first line with the github URL (in my case, **https://github.com/hugen79/NanoVNA-H** is important. I suggest you note it down... just in case someone comes up with yet another version.
+That first line with the github URL (in my case, **https://github.com/hugen79/NanoVNA-H**) is important. **Note it down because that tells you where to get your sofwrare updates**.
 
 Anothe important item is the version - in my case **v0.2.3.2-g8ac9166**. That will tell you if you need to upgrade.
 
@@ -37,19 +40,19 @@ When you get to the page, don't let all the directory stuff and files at the top
 
 ttrftech/edy55's github for NanoVNA is [here](https://github.com/ttrftech/NanoVNA) with the downloadable [software releases here](https://github.com/ttrftech/NanoVNA/releases).
 
-hugen79's github for NanoVNA is [here](https://github.com/hugen79/NanoVNA-H), with thedownloadable [software releases here](https://github.com/hugen79/NanoVNA-H/releases)
+hugen79's github for NanoVNA-H and -H4 is [here](https://github.com/hugen79/NanoVNA-H), with the downloadable [software releases here](https://github.com/hugen79/NanoVNA-H/releases)
 
 For any subsequent versions, try that URL from the __CONFIG__ -> __VERSION__ page. And add **/releases** to the end of the URL on the VERSION page to get to the releases directory.
 
 ## Step 2: Download and install the DFUSE firmware converter and uploader
 
-All NanoVNA's so far are based on ST Micro's STM32 family of chips. Loading the firmware from your Windows PC requires ST Micro's DFuse firmware loader.
+All NanoVNAs I've spotted so far are based on ST Micro's STM32 family of chips. Loading the firmware from your Windows PC requires ST Micro's DFuse firmware loader.
 
 The main download page is [here](https://www.st.com/en/development-tools/stsw-stm32080.html#getsoftware-scroll) with lots of instructions.
 
 Follow the instructions there for downloading and installing.
 
-All the program and utilities will appear in your Start menu under __STMicroelectronics__.
+All the program and utilities will appear in your Windows **Start** menu under __STMicroelectronics__.
 
 ### Step 2A: Load the driver for your Windows and hardware version
 
@@ -85,7 +88,7 @@ If you're following along properly, you have identified which NanoVNA version yo
 
 Scrolling down on the __/releases__ page for your device, you should eventually see the release number you have on your NanoVNA. That helps confirm that you are on the right page. If you don't see it:
 
-1. Double check in the URL: that you are on the right page for your device (NanoVNA or NanoVNA-H)
+1. Double check in the URL: that you are on the right page for your device (NanoVNA, NanoVNA-H, etc.)
 2. Check if your release number fits somewhere between a couple of release numbers on the page.
 
 The releases on the page are the sort-of-official releases that are judged to be significant and reliable enough for release by the developers. Keeners can go right to the source and pick up interim releases to get new features early. If you purchased your NanoVNA new, it likely has one of the official releases. If you picked it up used, it may have been owned by someone smarter than me who knows how to compile and generate interim releases.
@@ -102,10 +105,10 @@ At time this was written:
 * The NanoVNA release directory provides .hex and .bin files
 * The NanoVNA-H release directory provides .dfu files
 
-Follow the instructions below for your board.
+Follow the instructions below for the file format available for your NanoVNA.
 
 
-### NanoVNA: .zip file, with no .dfu
+### Example: NanoVNA: .zip file, with no .dfu
 ** Note**: I haven't tested this one myself, since I have a -H board. Drop me a message if there are errors. Sorry about blowing up your board.
 
 I got some of these instructions from [here](https://docs.ghielectronics.com/hardware/loaders/stm32-bootloader.html)
@@ -114,11 +117,13 @@ The NanoVNA developer releases firmware in a .zip file that contains .hex, .bin 
 
 You need to convert the either the .bin or the .hex file to .dfu
 
-Fortunately, that DFuse installation included a program called DFUFileMgr.exe.
+Fortunately, that DFuse installation (you did that in step 2) includes a program called DFUFileMgr.exe.
 
 * Download the .zip and unpack it.
 * Start the program (from the ST Microelectronics start menu group)
 * Select the appropriate conversion (*I want to GENERATE a DFU...*)
+
+**You only need to do one of the following:**
 
 To convert the .hex file: 
 * Click the __S19 or HEX__ button. Point to the directory when you unpacked the .zip file, and go to the __build__ subdirectory
@@ -135,7 +140,7 @@ To convert the  .bin file
 * Enter a name for your firmware and save the file
 
 
-### NanoVNA-H: Pick and download the appropriate .dfu file
+### Example: NanoVNA-H: Download the appropriate .dfu file
 
 Just pick and download. Thank you hugen79 for making it easy.
 
@@ -171,11 +176,11 @@ If you got the the DFU menu, jump to step 6
  STMicroelectronics has a [great manual here on using the DFuse utilities](https://www.st.com/content/ccc/resource/technical/document/user_manual/3f/61/72/ff/c5/5a/4a/7b/CD00155676.pdf/files/CD00155676.pdf/jcr:content/translations/en.CD00155676.pdf).
  
  * Your NanoVNA should be turned on, connected by USB, and showing the firmware update screen (step 5 above)
- * Start the DFuseDemo program
+ * Start the DFuseDemo program (Windows Start -> ST Micro -> DFuseDemo)
  * Using the pull-down under __Available DFU Devices__, select device __STM Device in DFU Mode__
   * If you do not see the device, go back to Step 2A to ensure you loaded the device driver. 
  * In the __Upgrade or Verify Action__ box, click the __Choose__ button and select the file you downloaded or converted
- * Click on __Upgrade__. You can ignore the warning message that pops up after and hit __OK__
+ * Click on __Upgrade__. You can ignore the warning message that pops up after and hit __Yes__
  * Wait for the __Upgrade Successful__ message
  * Quit
  
@@ -201,7 +206,7 @@ Gunther has updated the document in the past, so you may want to check his [rele
   * Part 2: [Configuring Traces, Channels and Formats](https://hexandflex.com/2019/09/08/getting-started-with-the-nanovna-part-2/)
   * Part 3: [Using the NanoVNA using the VNASaver PC software](https://hexandflex.com/2019/09/15/getting-started-with-the-nanovna-part-3-pc-software/)
   
-* A nice [NanoVNA case design on ThingyVerse]https://www.thingiverse.com/thing:3818979)
+* A nice [NanoVNA case design on ThingyVerse](https://www.thingiverse.com/thing:3818979). I printed mine in ABS. Fits my NanoVNA-H perfectly.
 * One of many [RTL-SDR blog entries on NanoVNA](https://www.rtl-sdr.com/tag/nanovna/). A great site for all manner of cheap and excellent radio gear.
  
  
