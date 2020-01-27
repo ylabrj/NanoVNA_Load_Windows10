@@ -26,7 +26,7 @@ __* Handy hint: use a stylus for tapping the screen and selecting the menus. Fat
 
 My unit says NanoVNA on the external case, but the VERSION screen identifies it as NanoVNA-H.
 
-That first line with the github URL (in my case, **https://github.com/hugen79/NanoVNA-H**) is important. **Note it down because that tells you where to get your sofwrare updates**.
+That first line with the github URL (in my case, **https://github.com/hugen79/NanoVNA-H**) is important. **Note it down because that tells you where to get your software updates**.
 
 Anothe important item is the version - in my case **v0.2.3.2-g8ac9166**. That will tell you if you need to upgrade.
 
