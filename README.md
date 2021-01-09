@@ -1,6 +1,16 @@
 # NanoVNA_Load_Windows10
 How to update software on your NanoVNA using Windows 10 for the complete idiot.
 
+# JAN 9 2021 NOTE: THERE ARE OTHER WAYS OF DOING THE UPGRADE AND OTHER SOURCES OF DOCS AND SOFTWARE
+
+Then [nanvoVNA group on groups.io](https://groups.io/g/nanovna-users) has become the go-to source for nanoVNA information. You have to create an account and sign in, but it's well worth it and there has been zero spam from the group.
+ To start with, there's an [excellent beginner's guide](https://groups.io/g/nanovna-users/files/Absolute%20Beginner%20Guide%20to%20The%20NanoVNA/Absolute_Beginner_Guide_NanoVNA_v1_5.pdf) that even covers software upgrades.
+ 
+ They also point to other sources of firmware. The original developer of the nanoVNA-H and -H4 variants has not updated the firmware in several months. [Others are releasing new versions](https://groups.io/g/nanovna-users/files/Dislord%27s%20Nanovna%20-H%20Firmware). That's the beauty of Open Source!
+
+
+# Original document
+
 __USE AT YOUR OWN RISK. I HAVEN'T TESTED EVERYTHING HERE BECAUSE I COVER MULTIPLE BOARD TYPES. YOU COULD BLOW YOUR BOARD AND MAKE IT UNRECOVERABLE__
 
 Info in this page is the result of much google searching. I try to link back to the source pages in every case. Apologies if I forgot anything.
